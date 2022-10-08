@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta  name = "viewport"  content = "width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Controle NEA</title>
+</head>
+<body>
+    <header>
+<nav>
+    <img src="http://www.novaeraambiental.com.br/wp-content/themes/themes/img/logo_png.png" 
+    alt="Logo Nova Era" width="155">
+</nav>
+    </header>
+    <div class="tela-login">
+        <h1>Login</h1>
+        <input type="text" placeholder="login" id="login">
+        <br> <br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br> <br>
+        <input type="submit" onclick="login(); return false">
+    </div>
+
+            <script>
+                function login(){
+                    const login = document.getElementById('login').value;
+                    const senha = document.getElementById('senha').value;
+
+                    if(login == "d" && senha == "1"){
+                        alert('Entramos');
+                        location.href = "historico_carros.html";                   
+                }else{
+                    alert('usario ou senha incorreto');
+                }
+            }
+
+            </script>
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
