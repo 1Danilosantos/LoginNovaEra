@@ -11,8 +11,22 @@
 <body>
     <header>
 <nav>
+    <a href="http://www.novaeraambiental.com.br">
     <img src="http://www.novaeraambiental.com.br/wp-content/themes/themes/img/logo_png.png" 
     alt="Logo Nova Era" width="155">
+    </a>
+        <ul>
+            <li>
+            <a href="cadastro.html">cadastro</a>
+            <li>
+                <a href="rotas.html">rotas</a>
+            </li>
+            <li>
+                <a href="historico.html">historico</a>
+            </li>
+        </ul>
+
+
 </nav>
     </header>
     <div class="tela-login">
@@ -29,9 +43,9 @@
                     const login = document.getElementById('login').value;
                     const senha = document.getElementById('senha').value;
 
-                    if(login == "d" && senha == "1"){
+                    if(login == "Danilo" && senha == "03051992"){
                         alert('Entramos');
-                        location.href = "historico_carros.html";                   
+                      location.href = "rotas.html";                   
                 }else{
                     alert('usario ou senha incorreto');
                 }
